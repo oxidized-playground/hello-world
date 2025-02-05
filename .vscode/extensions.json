@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "ms-vscode-remote.remote-containers",
+        "barbosshack.crates-io",
+        "rust-lang.rust-analyzer",
+        "vadimcn.vscode-lldb"
+    ]
+}
