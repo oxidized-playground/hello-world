@@ -111,14 +111,12 @@ Inside WSL you can stop and delete the devcontainer that was created. Execute th
 
 - wsl
 - docker ps (to check the containers currently on the system. Copy the container ID or the container name)
-- docker stop <container ID/name>
-- docker rm <container ID/name>
+- docker stop < container ID/name >
+- docker rm < container ID/name >
 
 Now you still need to delete the image itself. Copy the image UID (the longest one)
 
-- docker rmi <image UID>
-
-![Remove docker container](/images/remove_docker_container.png "Remove docker container")
+- docker rmi < image UID >
 
 ## delete linux subsystem
 
