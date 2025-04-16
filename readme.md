@@ -5,6 +5,8 @@ This guide will prepare you for the Rust playground. Once finished you will have
 ## Prerequisites
 - VSCode
 - Github access
+- Git itself
+- Admin rights
 
 ## Getting the stuff on your PC
 
