@@ -9,6 +9,8 @@ This guide will prepare you for the Rust playground. Once finished you will have
 **WARNING!** If you have an Alten laptop and do not have your own admin rights, YOU ARE NOT ALLOWED TO FULLY UNINSTALL WSL.
 If you don't want to use WSL, you can ignore the devcontainer part of this guide and install rust directly on your system from https://www.rust-lang.org/ If you keep everything default in the installer, you should be able to compile this hello world. Don't forget to install the extensions in VSCode.
 
+**NOTE:** We expect everyone to use the devcontainer as it's the easiest to setup. If you deviate from the install guide, please make sure your development environment works before starting the playground.
+
 ## Prerequisites
 - VSCode
 - Github access
@@ -51,7 +53,7 @@ After successfully installing WSL, VSCode will ask you to continue opening the f
 **Note:** You might encounter an issue here (see image). To solve this, look at the bottom of the page for instructions.
 ![No permission](/images/no_permission_to_run_docker.png "No permission")
 
-A new VSCode window will open and (when looking at the log) the devcontainer will create itself. This takes a few minutes depending on your internet speed, please have patience. 
+A new VSCode window will open and (when looking at the log) the devcontainer will create itself and start up. This takes a few minutes depending on your internet speed, please have patience. 
 
 ![Installing container](/images/installing_devcontainer.png "Installing container")
 
@@ -116,7 +118,7 @@ Now you still need to delete the image itself. Copy the image UID (the longest o
 
 - docker rmi <image UID>
 
-![Remove docker image](/images/remove_docker_image.png "Remove docker image")
+![Remove docker container](/images/remove_docker_container.png "Remove docker container")
 
 ## delete linux subsystem
 
