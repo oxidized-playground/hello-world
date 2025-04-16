@@ -4,7 +4,7 @@ This guide will prepare you for the Rust playground. Once finished you will have
 
 ## Prerequisites
 - VSCode
-- Git
+- Github access
 
 ## Getting the stuff on your PC
 
@@ -42,11 +42,11 @@ After successfully installing WSL, VSCode will ask you to continue opening the f
 **Note:** You might encounter an issue here (see image). To solve this, look at the bottom of the page for instructions.
 ![No permission](/images/no_permission_to_run_docker.png "No permission")
 
-A new VSCode window will open and (when looking at the log) the devcontainer will create it self. this takes a little bit of time, please have patience. 
+A new VSCode window will open and (when looking at the log) the devcontainer will create itself. this takes a little bit of time, please have patience. 
 
 ![Installing container](/images/installing_devcontainer.png "Installing container")
 
-When this is done, VSCode will again ask to install suggested extensions (this time inside the devcontainer)
+When this is done, VSCode will again ask to install suggested extensions this time inside the devcontainer.
 
 ![Install extensions](/images/install_extensions.png "Install extensions")
 
@@ -56,7 +56,7 @@ When this is done, VSCode will again ask to install suggested extensions (this t
 
 - Navigate to src/main.rs in the project folder
 
-- press Run right above the fn main() line
+- Press Run right above the fn main() line
 this should yield the following outcome
 
 ![Run](/images/run.png "Run")
@@ -73,7 +73,7 @@ And the resulting output:
 ## Troubleshooting Docker
 
 When you get this message when trying to open the folder in a devcontainer, the install process was not able to correctly setup your docker environment. 
-This is because something went wrong assigning the user to the docker group, which requirest sudo and the installer was not able to get sudo. If you try to run something with sudo yourself it will ask for a password that you dont have so we need to change it first for the "devcontainers" user. 
+This is because something went wrong assigning the user to the docker group, which requires root level permissions and the installer was not able to get these permissions through sudo. If you try to run something with sudo yourself it will ask for a password that you don't have so we need to change it first for the "devcontainers" user. 
 Execute the following steps in a terminal to solve this manually.
 
 
@@ -82,6 +82,8 @@ Execute the following steps in a terminal to solve this manually.
 - Now type in any password you like, it can be anything
   but make sure to remember it
 - exit
+
+---
 
 - wsl
 - sudo usermod -aG docker $USER
