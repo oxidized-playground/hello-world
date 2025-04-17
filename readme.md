@@ -6,11 +6,6 @@ This guide will prepare you for the Rust playground. Once finished you will have
 
 **Note:** To uninstall, please see the chapters at the bottom of this guide.
 
-**WARNING!** If you have an Alten laptop and do not have your own admin rights, YOU ARE NOT ALLOWED TO FULLY UNINSTALL WSL.
-If you don't want to use WSL, you can ignore the devcontainer part of this guide and install rust directly on your system from https://www.rust-lang.org/ If you keep everything default in the installer, you should be able to compile this hello world. Don't forget to install the extensions in VSCode.
-
-**NOTE:** We expect everyone to use the devcontainer as it's the easiest to setup. If you deviate from the install guide, please make sure your development environment works before starting the playground.
-
 ## Prerequisites
 - VSCode
 - Github access
@@ -50,7 +45,7 @@ After successfully installing WSL, VSCode will ask you to continue opening the f
 
 - Press continue
 
-**Note:** You might encounter an issue here (see image). To solve this, look at the bottom of the page for instructions.
+**Note:** You might encounter an issue here (see image). To solve this, look below for instructions.
 ![No permission](/images/no_permission_to_run_docker.png "No permission")
 
 A new VSCode window will open and (when looking at the log) the devcontainer will create itself and start up. This takes a few minutes depending on your internet speed, please have patience. 
@@ -63,7 +58,7 @@ When this is done, VSCode will again ask to install suggested extensions this ti
 
 - Press install
 
-## Try to build hello world
+## Build hello world
 
 - Navigate to src/main.rs in the project folder
 
@@ -129,7 +124,7 @@ The process above has installed an ubuntu subsystem. To remove this, check which
 
 ## delete WSL
 
-While it's really easy to install WSL, uninstalling is not so easy unfortunately. And the Alten environment makes it impossible even.
+While it's really easy to install WSL, uninstalling is not so easy unfortunately.
 
 What you need to do is navigate to windows settings -> System -> Optional features -> more windows features (you need admin rights from here). And then deactivate WSL there.
 
