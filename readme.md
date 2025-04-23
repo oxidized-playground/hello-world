@@ -35,7 +35,11 @@ VSCode will now ask you to reopen the directory in a devcontainer
 
 - Reboot your PC when finished
 
-**Note:** This step might fail the first time, so you might need to run it a second time if the first time fails. 
+---
+
+**Note:** The installation of WSL (and specifically the installation of the devcontainer) might fail. This can be solved by either retrying to install it or remove it from WSL as described in the "delete linux subsystem" chapter below in this readme and then trying to install it again.
+
+---
 
 **Note:** When WSL is installed a WSL windows may appear, ignore this.
 
