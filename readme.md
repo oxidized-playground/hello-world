@@ -41,7 +41,7 @@ VSCode will now ask you to reopen the directory in a devcontainer
 
 ---
 
-**Note:** When WSL is installed a WSL windows may appear, ignore this.
+**Note:** When WSL is installed a WSL window may appear, ignore this.
 
 After successfully installing WSL, VSCode will ask you to continue opening the folder into the devcontainer. 
 
