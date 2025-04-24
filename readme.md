@@ -1,5 +1,11 @@
 # Preparations for the Rust playground
 
+---
+
+**Note:** If you have any questions about the installation, you can find us today in the Einhoven office on the 3rd floor (left from the elevators). 
+
+---
+
 This guide will prepare you for the Rust playground. Once finished you will have everything you need (and pre-downloaded) to build and run Rust.
 
 **Note:** This guide will prepare you with a devcontainer that uses WSL. The goal is that everyone has the same environment that's easy to set up and remove with no trace of Rust on your actual system. 
