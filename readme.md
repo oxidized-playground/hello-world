@@ -1,14 +1,22 @@
-# Preparations for the Rust playground
+# Preparations for the Rust workshop
 
----
+## Please read this readme carefully!
 
-**Note:** If you have any questions about the installation, you can find us today in the Einhoven office on the 3rd floor (left from the elevators). 
+This guide will prepare you for the Rust workshop. Once finished you will have everything you need (and pre-downloaded) to build and run Rust.
 
----
+This guide is primarily focussed on Windows.
+For Linux and Mac the usage of VSCode will be identical as described in this guide.
 
-This guide will prepare you for the Rust playground. Once finished you will have everything you need (and pre-downloaded) to build and run Rust.
+If you have any questions or issues with the installation,
+please contact
 
-**Note:** This guide will prepare you with a devcontainer that uses WSL. The goal is that everyone has the same environment that's easy to set up and remove with no trace of Rust on your actual system. 
+- Koen Braham - koen.braham@alten.nl
+- Jeroen Jansen - jeroen.jansen@alten.nl
+- Sidney Philipsen - sidney.philipsen@alten.nl
+
+**Note:** This guide will prepare you with a devcontainer that uses WSL. The goal is that everyone has the same environment that's easy to set up and remove with no trace of Rust on your actual system.
+If you are uncomfortable with installing WSL, you can install rust directly onto your computer by following the Installing Rust chapter from here: https://rust-lang.org/learn/get-started/.
+Please be aware that if you choose to install Rust directly to also check that you can build and run a hello world (also described on the linked page).
 
 **Note:** To uninstall, please see the chapters at the bottom of this guide.
 
@@ -27,8 +35,8 @@ Clone this git repository into a folder on your PC with either HTTPS or SSH.
 ![Clone the repo](/images/clone_repo.png "Clone the repo")
 
 - Open the repository in VSCode
-  
-**Note:** VSCode will ask you to install suggested extensions. Ignore this for now. 
+
+**Note:** VSCode will ask you to install suggested extensions. Ignore this for now.
 
 VSCode will now ask you to reopen the directory in a devcontainer
 
@@ -49,16 +57,16 @@ VSCode will now ask you to reopen the directory in a devcontainer
 
 **Note:** When WSL is installed a WSL window may appear, ignore this.
 
-After successfully installing WSL, VSCode will ask you to continue opening the folder into the devcontainer. 
+After successfully installing WSL, VSCode will ask you to continue opening the folder into the devcontainer.
 
 ![Successful install](/images/continue_opening_in_devcontainer.png "Successful install")
 
 - Press continue
 
-**Note:** You might encounter an issue here (see image). To solve this, look below for instructions.
+**Note:** You might encounter an issue here (see image). To solve this, look below for instructions (Troubleshooting Docker).
 ![No permission](/images/no_permission_to_run_docker.png "No permission")
 
-A new VSCode window will open and (when looking at the log) the devcontainer will create itself and start up. This takes a few minutes depending on your internet speed, please have patience. 
+A new VSCode window will open and (when looking at the log) the devcontainer will create itself and start up. This takes a few minutes depending on your internet speed, please have patience.
 
 ![Installing container](/images/installing_devcontainer.png "Installing container")
 
@@ -73,7 +81,7 @@ When this is done, VSCode will again ask to install suggested extensions this ti
 - Navigate to src/main.rs in the project folder
 
 - Press Run right above the fn main() line
-this should yield the following outcome
+  this should yield the following outcome
 
 ![Run](/images/run.png "Run")
 
@@ -88,8 +96,10 @@ And the resulting output:
 
 ## Troubleshooting Docker
 
-When you get this message when trying to open the folder in a devcontainer, the install process was not able to correctly setup your docker environment. 
-This is because something went wrong assigning the user to the docker group, which requires root level permissions and the installer was not able to get these permissions through sudo. If you try to run something with sudo yourself it will ask for a password that you don't have so we need to change it first for the "devcontainers" user. 
+![No permission](/images/no_permission_to_run_docker.png "No permission")
+
+When you get this message when trying to open the folder in a devcontainer, the install process was not able to correctly setup your docker environment.
+This is because something went wrong assigning the user to the docker group, which requires root level permissions and the installer was not able to get these permissions through sudo. If you try to run something with sudo yourself it will ask for a password that you don't have so we need to change it first for the "devcontainers" user.
 Execute the following steps in a terminal to solve this manually.
 
 
@@ -137,11 +147,4 @@ The process above has installed an ubuntu subsystem. To remove this, check which
 While it's really easy to install WSL, uninstalling is not so easy unfortunately.
 
 What you need to do is navigate to windows settings -> System -> Optional features -> more windows features (you need admin rights from here). And then deactivate WSL there.
-
-
-
-
-
-
-  
 
